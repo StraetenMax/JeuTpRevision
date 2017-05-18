@@ -21,4 +21,24 @@ public class PersonnageJoueurGuerrier extends PersonnageJoueur {
 		this.fatigué = fatigué;
 		
 	}
+		//accesseur et mutateur
+	public int getForce(){
+		return force;
+	}
+	public void setForce(int force){
+		this.force = force;	
+	}
+	public int getNiveauEnergie(){
+		return niveauEnergie;
+	}
+	public void setNiveauEnergie(int niveauEnergie){
+		this.niveauEnergie = niveauEnergie;
+	}
+	public boolean getFatigué(){
+		return fatigué;
+	}
+	public void setFatigué(boolean fatigué){
+		this.fatigué = fatigué;
+	}
+	//methodes
 }
