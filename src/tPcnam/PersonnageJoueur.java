@@ -20,5 +20,14 @@ public class PersonnageJoueur extends Personnage {
 	public void setNom(String nom){
 		this.nom= nom;
 	}
-	//
+	//methodes
+	public String marcher(){
+		String str = "Personnage joueur marche";
+		return str;
+	}
+	public String description(){
+		String str1 = super.description()+" qui se nomme "+this.getNom();
+		return str1;
+	}
+	
 }
