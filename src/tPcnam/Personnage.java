@@ -3,7 +3,8 @@ package tPcnam;
 public class Personnage {
 	//propriétés
 	private String race;
-	int taille, poids;
+	int taille; 
+	int poids;
 	
 	//constructeurs vide et initialisé
 	public Personnage(){
@@ -11,7 +12,7 @@ public class Personnage {
 		taille = 0;
 		poids = 0;
 	}
-	public Personnage(String race, int taille, int Poids){
+	public Personnage(String race, int taille, int poids){
 		this.race = race;
 		this.taille = taille;
 		this.poids = poids;																		
