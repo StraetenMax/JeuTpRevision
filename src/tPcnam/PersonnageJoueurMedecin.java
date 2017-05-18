@@ -18,4 +18,19 @@ public class PersonnageJoueurMedecin extends PersonnageJoueur{
 	public int getNbMedicaments(){
 		return nbMedicaments;
 	}
+	
+	//méthodes
+	public boolean plusGrandQue(PersonnageJoueurMedecin btn){
+		boolean mdf;
+		if(btn.getTaille()<this.getTaille()){
+			mdf = true;
+		}else{
+			mdf = false;
+		}
+		return mdf;
+	}
+	public String description(){
+		String str = super.description()+" qui a "+this.getNbMedicaments()+" médicaments";
+		return str;
+	}
 }
