@@ -41,4 +41,17 @@ public class PersonnageJoueurGuerrier extends PersonnageJoueur {
 		this.fatigué = fatigué;
 	}
 	//methodes
+	public boolean estMoinsFortQue(PersonnageJoueurGuerrier brt){
+		boolean emfq;
+		if(brt.getForce()<this.getForce()){
+			emfq = true;
+		}else{
+			emfq = false;
+		}
+		return emfq;
+	}
+	public String description(){
+		String str = super.description()+" dont la force est de "+this.getForce();
+		return str;
+	}
 }
